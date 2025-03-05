@@ -49,7 +49,7 @@ char **lsh_split_line(char *line) {
 
 int lsh_launch(
     char **args) { // first the parent creates a child , they both get their
-                   // "lash_launch" function and they are handled based on the
+                   // "lsh_launch" function and they are handled based on the
                    // return value of fork which is pid. if the pid =0 then
                    // child , if greater than 0 then we are in parent and it
                    // executes until the child is finished (execvp continuously
